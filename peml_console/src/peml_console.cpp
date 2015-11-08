@@ -27,7 +27,7 @@ void log(wstring& msg, int level, int code)
 {
 	wcout << L"Log:" << level <<L" " << code << L" " << msg.c_str() << endl;
 }
-int main(int argc, wchar_t**argv)
+int wmain(int argc, wchar_t**argv)
 {
 	pemetalib::ExeResources res;
 	peutils::Utils utils;
@@ -37,9 +37,7 @@ int main(int argc, wchar_t**argv)
 
 	bool ret = utils.parseCommandLineArgs(argc, argv, res,
 		vector<AdditionalArgument>({
-		AdditionalArgument("exe", "Exe file to update(required)", &exePath, AdditionalArgument::ArgType::EXISITNG_FILE, true),
-		AdditionalArgument("manifest", "Manifest file to append", &iconPath, AdditionalArgument::ArgType::EXISITNG_FILE, false),
-			AdditionalArgument("icon", "Icon file to set", &iconPath, AdditionalArgument::ArgType::EXISITNG_FILE, false) }));
+		AdditionalArgument("exe", "Exe file to update(required)", &exePath, AdditionalArgument::ArgType::EXISITNG_FILE, true)}));
 	if (ret == false)
 	{
 		wcout << utils.getParseError()<<endl;

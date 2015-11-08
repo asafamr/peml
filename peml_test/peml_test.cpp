@@ -108,7 +108,7 @@ TEST_CASE("end to end", "[e2e]")
 
 
 	
-	const char * PATH_TO_CONSOLE = "C:\\ws\\DuckPack\\vs2015\\Debug\\peml_console.exe";
+	const char * PATH_TO_CONSOLE = "Debug\\peml_console.exe";
 	const char * PATH_TO_TESTOUT = "..\\peml_test\\test_workspace\\teste2e.exe";
 	const char * PATH_TO_ICON = "..\\peml_test\\test_workspace\\icon.ico";
 	const char * PATH_TO_MANIFEST = "..\\peml_test\\test_workspace\\manifest.txt";
@@ -118,7 +118,7 @@ TEST_CASE("end to end", "[e2e]")
 
 	const char* commandLine[] = { PATH_TO_CONSOLE, 
 		"--exe", PATH_TO_TESTOUT,
-		"--ico", PATH_TO_ICON,
+		"--icon", PATH_TO_ICON,
 		"--manifest", PATH_TO_MANIFEST,
 		"--version","1.2.4.56",
 		"--comment","some comment",

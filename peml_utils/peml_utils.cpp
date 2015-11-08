@@ -228,7 +228,7 @@ namespace peutils
 		{
 			vector<AdditionalArgument> additionalFull(additional);
 			additionalFull.push_back(AdditionalArgument("icon", "", &outRes.iconPath, AdditionalArgument::ArgType::EXISITNG_FILE, false));
-			additionalFull.push_back(AdditionalArgument("manifest", "", &outRes.iconPath, AdditionalArgument::ArgType::EXISTING_FILE_LOAD_CONTENT, false));
+			additionalFull.push_back(AdditionalArgument("manifest", "", &outRes.manifest, AdditionalArgument::ArgType::EXISTING_FILE_LOAD_CONTENT, false));
 			//check notes on getArgDesc for crudeness 
 			po::options_description desc=getArgDesc(outRes, additionalFull);
 			po::variables_map vm;

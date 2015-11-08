@@ -45,3 +45,11 @@ Temporary Items
 peml_console/Debug
 peml_test/Debug
 docs/docs
+Debug/
+Release/
+.vs/
+*.exe
+*.opensdf
+*.sdf
+*.user
+*.filters
