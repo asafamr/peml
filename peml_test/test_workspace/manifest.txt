@@ -1,0 +1,9 @@
+<assembly xmlns=\"urn:schemas-microsoft-com:asm.v1\" manifestVersion=\"1.0\">\r\n\
+		<trustInfo xmlns=\"urn:schemas-microsoft-com:asm.v3\">\r\n\
+		<security>\r\n\
+		<requestedPrivileges>\r\n\
+		<requestedExecutionLevel level=\"asInvoker\" uiAccess=\"false\"></requestedExecutionLevel>\r\n\
+		</requestedPrivileges>\r\n\
+		</security>\r\n\
+		</trustInfo>\r\n\
+		</assembly>

@@ -43,3 +43,5 @@ Temporary Items
 .apdisk
 
 peml_console/Debug
+peml_test/Debug
+docs/docs
