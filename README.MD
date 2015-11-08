@@ -2,6 +2,14 @@
 
 PE metdata editing C++ library
 
-#License
+###Requirements
+
+Boost program_options
+
+###Usage
+
+See console and tests
+
+###License
 
 MIT
